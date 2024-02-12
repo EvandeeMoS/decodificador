@@ -7,37 +7,124 @@
         <title>Code/Decode</title>
     </head>
     <body>
-        <head>
-            <h1>Code / Decode</h1>
-            <nav>
-                <ul>
-                    <li><a href="">Decodificador</a></li>
-                    <li><a href="">Sobre o projeto</a></li>
-                    <li><a href="">Sobre mim</a></li>
-                </ul>
-            </nav>
-        </head>
-        <main>
-            <div>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <button>Codificar</button>
-                <button>Decodificar</button>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+        <header>
+            <div class="header-container">                
+                <h1>Code / Decode</h1>
+                <nav>
+                    <ul id="nav-list">
+                        <li><a href="">Decodificador</a></li>
+                        <li><a href="">Sobre o projeto</a></li>
+                        <li><a href="">Sobre mim</a></li>
+                    </ul>
+                </nav>
             </div>
-            <aside id="history-container">
-                <button>Codificações</button>
-                <button>Decodificações</button>
-                <ul>
-                    <li>lorem ipsum dolor sit amet<button><img src="" alt="delete"></button><button><img src="" alt="copy"></button></li>
-                    <li>lorem ipsum dolor sit amet<button><img src="" alt="delete"></button><button><img src="" alt="copy"></button></li>
-                    <li>lorem ipsum dolor sit amet<button><img src="" alt="delete"></button><button><img src="" alt="copy"></button></li>
-                    <li>lorem ipsum dolor sit amet<button><img src="" alt="delete"></button><button><img src="" alt="copy"></button></li>
-                    <li>lorem ipsum dolor sit amet<button><img src="" alt="delete"></button><button><img src="" alt="copy"></button></li>
+        </header>
+        <main>
+            <div id="main-content-container">
+                <div class="textarea"></div>
+                <button id="code-decode-btn">Codificar</button>
+                <div class="textarea"></div>
+            </div>
+            <aside id="history-container" act="active">
+                <button id="aside-to-main" onClick="document.getElementById('history-container').setAttribute('act', 'active'); document.getElementById('aside-to-main').setAttribute('act', 'active');"><<</button>
+                <div class="history-btn-container">
+                    <div>
+                        <button status="active">Codificações</button>
+                        <button>Decodificações</button>
+                    </div>
+                    <button class="close-btn" onClick="document.getElementById('history-container').setAttribute('act', 'false'); document.getElementById('aside-to-main').setAttribute('act', 'false');">X</button>
+                </div>
+                <ul class="history-list">
+                    <li class="history-item">
+                        <div class="card-header">
+                            <button><img src="./assets/icons/copy.png" alt="copy"></button>
+                            <button><img src="./assets/icons/trash.png" alt="delete"></button>
+                        </div>
+                        <p>lorem ipsum dolor sit amet</p>
+                    </li>
+                    <li class="history-item">
+                        <div class="card-header">
+                            <button><img src="./assets/icons/copy.png" alt="copy"></button>
+                            <button><img src="./assets/icons/trash.png" alt="delete"></button>
+                        </div>
+                        <p>lorem ipsum dolor sit amet</p>
+                    </li>
+                    <li class="history-item">
+                        <div class="card-header">
+                            <button><img src="./assets/icons/copy.png" alt="copy"></button>
+                            <button><img src="./assets/icons/trash.png" alt="delete"></button>
+                        </div>
+                        <p>lorem ipsum dolor sit amet</p>
+                    </li>
+                    <li class="history-item">
+                        <div class="card-header">
+                            <button><img src="./assets/icons/copy.png" alt="copy"></button>
+                            <button><img src="./assets/icons/trash.png" alt="delete"></button>
+                        </div>
+                        <p>lorem ipsum dolor sit amet</p>
+                    </li>
+                    <li class="history-item">
+                        <div class="card-header">
+                            <button><img src="./assets/icons/copy.png" alt="copy"></button>
+                            <button><img src="./assets/icons/trash.png" alt="delete"></button>
+                        </div>
+                        <p>lorem ipsum dolor sit amet</p>
+                    </li>
+                    <li class="history-item">
+                        <div class="card-header">
+                            <button><img src="./assets/icons/copy.png" alt="copy"></button>
+                            <button><img src="./assets/icons/trash.png" alt="delete"></button>
+                        </div>
+                        <p>lorem ipsum dolor sit amet</p>
+                    </li>
+                    <li class="history-item">
+                        <div class="card-header">
+                            <button><img src="./assets/icons/copy.png" alt="copy"></button>
+                            <button><img src="./assets/icons/trash.png" alt="delete"></button>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea nostrum eius porro possimus, iusto eum? Ut, maxime commodi, ducimus deserunt iste incidunt alias quibusdam voluptate dolores a molestias culpa nihil.
+                        Magnam soluta veniam nihil libero minima quos aliquam quidem mollitia, tenetur ad quibusdam eveniet enim distinctio dolor. Tenetur ab, fugiat omnis similique tempora dignissimos voluptas voluptatum ex? Dolorem, tenetur asperiores.</p>
+                    </li>
+                    <li class="history-item">
+                        <div class="card-header">
+                            <button><img src="./assets/icons/copy.png" alt="copy"></button>
+                            <button><img src="./assets/icons/trash.png" alt="delete"></button>
+                        </div>
+                        <p>lorem ipsum dolor sit amet</p>
+                    </li>
+                    <li class="history-item">
+                        <div class="card-header">
+                            <button><img src="./assets/icons/copy.png" alt="copy"></button>
+                            <button><img src="./assets/icons/trash.png" alt="delete"></button>
+                        </div>
+                        <p>lorem ipsum dolor sit amet</p>
+                    </li>
+                    <li class="history-item">
+                        <div class="card-header">
+                            <button><img src="./assets/icons/copy.png" alt="copy"></button>
+                            <button><img src="./assets/icons/trash.png" alt="delete"></button>
+                        </div>
+                        <p>lorem ipsum dolor sit amet</p>
+                    </li>
+                    <li class="history-item">
+                        <div class="card-header">
+                            <button><img src="./assets/icons/copy.png" alt="copy"></button>
+                            <button><img src="./assets/icons/trash.png" alt="delete"></button>
+                        </div>
+                        <p>lorem ipsum dolor sit amet</p>
+                    </li>
+                    <li class="history-item">
+                        <div class="card-header">
+                            <button><img src="./assets/icons/copy.png" alt="copy"></button>
+                            <button><img src="./assets/icons/trash.png" alt="delete"></button>
+                        </div>
+                        <p>lorem ipsum dolor sit amet</p>
+                    </li>
                 </ul>
             </aside>
         </main>
         <footer>
-            <p></p>
+            <p>Desafio proposto para a turma 6 do programa OracleOne, desenvolvido por <a href="#">@EvandeeMoS</a></p>
         </footer>
     </body>
 </html>
